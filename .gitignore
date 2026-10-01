@@ -1,0 +1,24 @@
+
+# Aider Studio (auto-added)
+REPO_MAP.md
+.aider/
+.sih_runtime/
+storage/
+__pycache__/
+build/
+dist/
+*.spec
+*.pt
+*.tflite
+*.task
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+weights/
+models/
+data1/
+*.png
+*.jpeg
+*.jpg
+*.mp4

@@ -1,0 +1,17 @@
+# Target runtime: Python 3.14.2
+# The first two pins are architectural requirements for this project.
+numpy>=2.0
+# Windows/NVIDIA runtime: the application intentionally refuses CPU-only Torch.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+ultralytics>=8.3
+# Native instance masks, boxes and class names come from Ultralytics Results.plot().
+PySide6-Essentials==6.11.2
+PyInstaller==6.22.3
+vosk>=0.3.45
+sounddevice>=0.5
+pyttsx3>=2.98
+argostranslate>=1.9
+bleak>=0.22
+pybluez2>=0.46
