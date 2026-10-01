@@ -51,9 +51,9 @@ Example step file:
 
 ```
 new ordered experiment
-1. place the bottle inside the box
-2. take out the white earbuds from the blackbox
-3. close the box lid
+1. open the blackbox which consists of white earbuds case and black earbuds case.
+2. take out the white earbuds case first from the blackbox.
+3. and then take out the black earbuds case from the blackbox.
 ```
 
 ## Step parsing without strict syntax
@@ -93,18 +93,6 @@ A plain step still passes on the first frame where all its labels are present
 matching frames). On a pass the console prints `Step X Completed!`, the step is
 checked off, the state machine advances, and `pyttsx3` reads out the **next**
 step's instruction from its own thread.
-
-## Small-object re-label rule
-
-A black earbud case and a small black box are both dark plastic, so the
-checkpoint reports the case as `blackbox`. The area filter decides between them
-by size: a `blackbox` whose bounding box area is below
-`EdgeTuning.small_object_max_area` (default `25000`) is re-assigned
-`EdgeTuning.small_object_target_label` (default `black-earbuds`) before any
-label is read, so the state machine, the HUD and the recording all agree. Set
-the threshold to `0` to disable the rule. The native masks are untouched; the
-corrected name is drawn beside the box it changed, and the monitor warns at
-startup if the target is not a class of the loaded checkpoint.
 
 ## Threading
 
@@ -174,3 +162,8 @@ per-launch extraction latency. The resulting EXE can open offline from that icon
 Bluetooth speakers must be paired and selected as the Windows default A2DP audio
 device. The desktop app can scan/connect compatible BLE control channels, while
 Windows owns the A2DP audio transport that `pyttsx3` uses.
+
+## Additional features that can be implemented and our team is trying to do so
+
+1. We can directly connect the ai to chemical valves control so that there is no wastage of resource constraint chemicals .
+2. Currently working on fitting the entire project with ai offline chat model llama 3.1 8b within jetson nano , providing totally automated and headless monitoring and alerting.
