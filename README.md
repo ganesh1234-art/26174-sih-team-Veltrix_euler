@@ -7,7 +7,7 @@ experiment procedure is verified from the class names that checkpoint emits.
 Monitoring, speech recognition, translation, vision inference, experiment
 verification, storage, Wi-Fi camera ingestion, and camera reconnect loop run
 locally. Voice Chat is the sole optional local REST call and targets
-`http://127.0.0.1:11434` (Ollama on the same computer).
+ip address (Ollama on the same computer).
 
 ## Run during development
 
